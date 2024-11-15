@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!---------------- TIME CONTAINER --------------------->
+        <div class="timer-container">
+            <div class="timer-content">
+                <h2 id="timer">00:00</h2>
+                <button id="playPause">PLAY</button>
+    
+            </div>
+            <button id="config">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw7B6uZ6KGbEW1RqetJeXnUlPDFvEDLihjZw&s">
+            </button>
+        </div>
+        <!---------------- OPTION-BUTTON-CONTAINER --------------------->
+        <div class="option-btn-container">
+            <button class="option-btn active-option-btn" id="pomodoro">pomodoro</button>
+            <button class="option-btn" id="shortBreak">short break</button>
+            <button class="option-btn" id="longBreak">long break</button>
+        </div>
+    </div>
+    <div class="settings-modal hidden">
+        <div class="header">
+            <h2>Settings</h2>
+            <button id="closeBtn">x</button>
+        </div>
+        <h4>Time (minutes)</h4>
+        <form>
+            <div class="input-container">
+                <label>pomodoro</label>
+                <input id="pomodoroInput" min="1" value="25" type="number">
+            </div>
+            <div class="input-container">
+                <label>short break</label>
+                <input id="shortBreakInput" min="1" value="5" type="number">
+            </div>
+            <div class="input-container">
+                <label>long break</label>
+                <input id="longBreakInput" min="1" value="15" type="number">
+            </div>
+        </form>
+        <button id="apply">Apply</button>
+    </div>
+    <div class="overlay hidden"></div>
+</body>
+</html>
